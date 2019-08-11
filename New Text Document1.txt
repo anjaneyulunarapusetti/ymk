@@ -1,0 +1,75 @@
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1
+$ git init
+Initialized empty Git repository in C:/Users/Raja/Desktop/demo1/.git/
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git add .
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   New Text Document1.txt
+
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git commit
+[master (root-commit) 44e866d] anji
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document1.txt
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git log
+commit 44e866d3e5ed0353b4667256074a63b77a0d9984 (HEAD -> master)
+Author: anjaneyulu <anjaneyulu@gmail>
+Date:   Sun Aug 11 11:27:12 2019 +0530
+
+    anji
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git remote add origin "https://github.com/anjaneyulunarapusetti/ymk.git"
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$  git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anjaneyulunarapusetti/ymk.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Raja@DESKTOP-8JP7BUF MINGW64 ~/Desktop/demo1 (master)
+$
